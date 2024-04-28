@@ -1,2 +1,11 @@
 <h1>Sorters#index</h1>
 <p>Find me in app/views/sorters/index.html.erb</p>
+<h1>Sorters<h2>
+
+<ul>
+  <% @sorters.each do |sorter| %>
+    <li>
+      <a href="sorters/<%= sorter.name.downcase %>"><%= sorter.name %></a>
+    </li>
+  <% end %>
+</ul>
